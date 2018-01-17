@@ -12,11 +12,43 @@ Curso de JS oferecido pela Caelum em parceria com a Gama Academy. Parte do trein
 - this para referenciar o elemento;
 - Utilizando nodeParent para remover o cartão.
 
+2 - Implementar botão que vria variação entre Linha e Blocos.
 
-2 - Mudar cor do cartão de acordo com a cor dos botões.
+- Códio que altera o texto do botão no clique;
+```
+function mudaTexto() {
+    if(this.textContent == "Blocos"){
+        this.textContent = "Linhas";
+    }else{
+        this.textContent = "Blocos";
+        
+    }
+}
+```
 
+- Código que muda o layout dos cartões ao clicar no btn;
 
+```
+function mudaLayout(){
+    if(mural.classList.contains('mural--linha')){
+        mural.classList.remove('mural--linha');
+    }else{
+        mural.classList.add('mural--linha');
+    }
+}
+```
 
+- Implementa o Event Listiner para execuar as duas funções ao clicar no botão;
+
+```
+function mudaLayout(){
+    if(mural.classList.contains('mural--linha')){
+        mural.classList.remove('mural--linha');
+    }else{
+        mural.classList.add('mural--linha');
+    }
+}
+```
 
 
 ### Anotações gerais
