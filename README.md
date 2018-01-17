@@ -62,5 +62,15 @@ cartao.addEventListener('transitionend', function(){
 
 ```
 
+- Implementamos no código o IIFE no código de remoção de cartões.
+
+```
+(function () {
+    .....
+})()
+```
+
+
+
 ### Anotações gerais
 
