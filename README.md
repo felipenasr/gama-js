@@ -45,6 +45,22 @@ btn.addEventListener('click', mudaLayout)
 btn.addEventListener('click', mudaTexto)
 ```
 
+3 - Update na funcionalidade de apagar o cartão: 
+- Retiramos 'onclick="this.parentNode.parentNode.remove()"' dos elementos. Criamos um arquivo chamado remove.js e colocamos ele numa sub pasta da pasta JS.
+
+- Com o objetivo de tornar dinamico a funcionalidade de remover e tornar animada o efeito de remoção, implementamos o código: 
+
+```
+const cartao = this.parentNode.parentNode;
+
+cartao.classList.add('cartao--some');
+
+cartao.addEventListener('transitionend', function(){
+    cartao.remove()
+})
+
+
+```
 
 ### Anotações gerais
 

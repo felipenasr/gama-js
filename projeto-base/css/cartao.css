@@ -16,6 +16,8 @@
 	transition: 0.5s;
 }
 
+
+
 .cartao.cartao--focado,
 .cartao:hover,
 .cartao:focus {
