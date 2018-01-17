@@ -41,13 +41,8 @@ function mudaLayout(){
 - Implementa o Event Listiner para execuar as duas funções ao clicar no botão;
 
 ```
-function mudaLayout(){
-    if(mural.classList.contains('mural--linha')){
-        mural.classList.remove('mural--linha');
-    }else{
-        mural.classList.add('mural--linha');
-    }
-}
+btn.addEventListener('click', mudaLayout)
+btn.addEventListener('click', mudaTexto)
 ```
 
 
