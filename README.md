@@ -9,8 +9,11 @@ Curso de JS oferecido pela Caelum em parceria com a Gama Academy. Parte do trein
 ```
 <button onclick="this.parentNode.parentNode.remove()" class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0">
 ```
+    
+    - Utilizando nodeParent para remover o cartão;
+    - this para referenciar o elemento.
 
-- Utilizando nodeParent para remover o cartão.
+
 2 - Mudar cor do cartão de acordo com a cor dos botões.
 
 
