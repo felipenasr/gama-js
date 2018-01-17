@@ -5,11 +5,11 @@ Curso de JS oferecido pela Caelum em parceria com a Gama Academy. Parte do trein
 
 
 ### Funcionalidades do projeto
-    1 - Apagar o cartão:
-        ```<button onclick="this.parentNode.parentNode.remove()" class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0">
+1 - Apagar o cartão:
+    <button onclick="this.parentNode.parentNode.remove()" class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0">
 
-        - Utilizando nodeParent para remover o cartão.
-    2 - Mudar cor do cartão de acordo com a cor dos botões.
+- Utilizando nodeParent para remover o cartão.
+2 - Mudar cor do cartão de acordo com a cor dos botões.
 
 
 
