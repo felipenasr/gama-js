@@ -9,12 +9,12 @@ Curso de JS oferecido pela Caelum em parceria com a Gama Academy. Parte do trein
 ```
 <button onclick="this.parentNode.parentNode.remove()" class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0">
 ```
-- this para referenciar o elemento;
-- Utilizando nodeParent para remover o cartão.
+- this foi utilizado para referenciar o elemento;
+- Utilizando nodeParent para percorrer o DOM e remover o elemento acimda do botão, que nesse caso seria o nosso cartão.
 
-2 - Implementar botão que vria variação entre Linha e Blocos.
+2 - Implementar botão que define variação entre Linha e Blocos.
 
-- Códio que altera o texto do botão no clique;
+- Códio que altera o texto do botão no clique, utilizando uma validação simples;
 ```
 function mudaTexto() {
     if(this.textContent == "Blocos"){
@@ -26,7 +26,7 @@ function mudaTexto() {
 }
 ```
 
-- Código que muda o layout dos cartões ao clicar no btn;
+- Código que muda o layout dos cartões ao clicar no btn, verificando se a classe 'mural--linha' já está setada no elemento;
 
 ```
 function mudaLayout(){
@@ -46,7 +46,8 @@ btn.addEventListener('click', mudaTexto)
 ```
 
 3 - Update na funcionalidade de apagar o cartão: 
-- Retiramos 'onclick="this.parentNode.parentNode.remove()"' dos elementos. Criamos um arquivo chamado remove.js e colocamos ele numa sub pasta da pasta JS.
+
+- Retiramos 'onclick="this.parentNode.parentNode.remove()"' dos elementos. Criamos um arquivo chamado remove.js e colocamos ele na subpasta da pasta JS 'opcoesDoCartao'.
 
 - Com o objetivo de tornar dinamico a funcionalidade de remover e tornar animada o efeito de remoção, implementamos o código: 
 
@@ -60,6 +61,15 @@ cartao.addEventListener('transitionend', function(){
 })
 
 
+```
+
+- Para implementar a alteração em todos os elementos, alterei de 'querySelect' para 'querySelectAll':
+
+```
+const btnRemove = document.querySelectorAll('.opcoesDoCartao-remove');
+btnRemove.forEach(element => {
+    element.addEventListener('click', removeCartao);
+});
 ```
 
 - Implementamos no código o IIFE no código de remoção de cartões.
