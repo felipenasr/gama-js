@@ -5,6 +5,9 @@ Curso de JS oferecido pela Caelum em parceria com a Gama Academy. Parte do trein
 
 
 ### Funcionalidades do projeto
+
+Nesta lista, irei explicar passo a passo o que fizemos no curso.
+
 1 - Apagar o cartão:
 ```
 <button onclick="this.parentNode.parentNode.remove()" class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0">
